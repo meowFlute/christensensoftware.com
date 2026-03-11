@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christensen Software LLC | Automotive Engineering & Instruction</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #111827;
+            --accent: #2563eb;
+            --muted: #4b5563;
+            --border: #e5e7eb;
+            --font-main: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+            flex-grow: 1;
+        }
+
+        header {
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            margin: 0 0 0.5rem 0;
+            color: #000;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        section {
+            margin-bottom: 5rem;
+        }
+
+        h2 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--muted);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.75rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .about-text {
+            font-size: 1.125rem;
+            color: #374151;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .credentials-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 2rem;
+        }
+
+        .credential-tag {
+            border: 1px solid var(--border);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--muted);
+            background: #fafafa;
+        }
+
+        .contact-area {
+            background: #f9fafb;
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--muted);
+        }
+
+        input, textarea {
+            padding: 0.875rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            background: white;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        button {
+            background: #000;
+            color: #fff;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.1s, background 0.2s;
+            margin-top: 0.5rem;
+        }
+
+        button:hover {
+            background: #1f2937;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        footer {
+            padding: 4rem 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--muted);
+            background: #fff;
+        }
+
+        footer strong {
+            color: #000;
+        }
+
+        @media (max-width: 640px) {
+            .container { padding: 4rem 1.5rem; }
+            h1 { font-size: 2rem; }
+            .contact-area { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Christensen Software LLC</h1>
+            <div class="tagline">Automotive Engineering & Technical Instruction</div>
+        </header>
+
+        <section id="about">
+            <h2>About Our Company</h2>
+            <div class="about-text">
+                <p>We are a Michigan-based engineering consultancy specializing in the intersection of automotive embedded systems and technical instruction. Led by a Principal with over ten years of OEM engineering experience, we deliver software solutions and "turn-key" instructional programs that meet the industry's most rigorous safety and compliance standards.</p>
+                <p><strong>Core Capabilities:</strong></p>
+                <ul style="margin-bottom: 2rem; padding-left: 1.25rem;">
+                    <li>Standards-compliant embedded software (ISO 26262, MISRA C/C++)</li>
+                    <li>Python-driven data analytics and EDA pipelines</li>
+                    <li>Turn-key curriculum design for technical institutions</li>
+                    <li>Cybersecurity and ECU hardening for automotive platforms</li>
+                </ul>
+            </div>
+            <div class="credentials-list">
+                <span class="credential-tag">ISO 26262 / Functional Safety</span>
+                <span class="credential-tag">MISRA C/C++ Compliance</span>
+                <span class="credential-tag">AUTOSAR Architecture</span>
+                <span class="credential-tag">Python EDA Pipelines</span>
+                <span class="credential-tag">U-Mich MS ME & MBA</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Direct Inquiry</h2>
+            <div class="contact-area">
+                <!-- Replace 'YOUR_FORMSPREE_ID' with your ID from formspree.io -->
+                <form action="https://formspree.io/f/xykneqko" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Work Email</label>
+                        <input type="email" id="email" name="email" required placeholder="email@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Requirement Summary</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Briefly describe your software or instructional needs."></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <strong>Christensen Software LLC</strong> &middot; Registered in Michigan<br>
+        Principal: M. Scott Christensen, MS ME, MBA.
+    </footer>
+
+</body>
+</html>
