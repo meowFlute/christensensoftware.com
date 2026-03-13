@@ -4,6 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christensen Software LLC | Automotive Engineering & Instruction</title>
+    <meta name="description" content="Michigan-based engineering consultancy specializing in automotive embedded systems, standards-compliant and safety-critical software, and custom technical instruction">
+    <link rel="icon" type="image/png" href="Christensen Software Black On White Logo.png">
+    <link rel="canonical" href="https://christensensoftware.com">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Christensen Software LLC | Automotive Engineering & Instruction">
+    <meta property="og:description" content="Michigan-based engineering consultancy specializing in automotive embedded systems, standards-compliant and safety-critical software, and custom technical instruction">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://christensensoftware.com">
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Christensen Software LLC",
+      "description": "Michigan-based engineering consultancy specializing in automotive embedded systems, standards-compliant and safety-critical software, and custom technical instruction.",
+      "url": "https://christensensoftware.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "MI",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+
     <style>
         :root {
             --bg: #ffffff;
@@ -50,6 +76,18 @@
             font-size: 1.25rem;
             color: var(--muted);
             font-weight: 400;
+        }
+
+        .header-main {
+            display: flex;
+            align-items: baseline;
+            gap: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-logo {
+            max-width: 80px;
+            height: auto;
         }
 
         section {
@@ -181,7 +219,10 @@
 
     <div class="container">
         <header>
-            <h1>Christensen Software LLC</h1>
+            <div class="header-main">
+                <img src="Christensen Software Black On White Logo.png" alt="Christensen Software LLC Logo" class="header-logo">
+                <h1 style="margin: 0;">Christensen Software LLC</h1>
+            </div>
             <div class="tagline">Automotive/Embedded Software Engineering & Custom Technical Instruction</div>
         </header>
 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Sitemap for https://christensensoftware.com
+  
+  HOW TO USE THIS LATER:
+  1. For every new page you add (e.g., /blog.html), add a new <url> block.
+  2. Update <lastmod> (YYYY-MM-DD) whenever you make major changes.
+  3. <changefreq> tells search engines how often the page likely changes.
+  4. <priority> (0.0 to 1.0) helps search engines understand which pages are most important.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://christensensoftware.com/</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
